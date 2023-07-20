@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<title>Indirect File Leaks in Mobile Applications</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Indirect File Leaks in Mobile Applications">
+<link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+</head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17424195-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<body>
+
+<h2>Indirect File Leaks in Mobile Applications</h2>
+
+This page lists the supplementary materials for our following MoST'15 paper:
+
+<ul>
+<li>
+<b>Indirect File Leaks in Mobile Applications</b>. [<a href="../papers/MoST15_IndirectFileLeak.pdf">Paper</a> | <a href="../slides/Most15_IFL_dao.pptx">Slides</a>]
+<br /><a href="https://daoyuan14.github.io/">Daoyuan Wu</a> and <a href="http://www4.comp.polyu.edu.hk/~csrchang/">Rocky K. C. Chang</a>.
+<br />Department of Computing, The Hong Kong Polytechnic University.
+<br />To appear in <a href="http://ieee-security.org/TC/SPW2015/MoST/" target="_blank">MoST 2015</a>, in conjunction with <a href="http://ieee-security.org/TC/SP2015/" target="_blank">S&P 2015</a>, San Jose, USA. (The paper AR = 10/33 = 30.3%)
+</li>
+</ul>
+
+<p>
+Still under construction... We appreciate your patience for the full report. :)
+</p>
+
+
+<p>
+<b>1. IFL (indirect file leak) attacks:</b><br/>
+<img src="../pics/IFLmodel.png" height="360" width="480">&nbsp; &nbsp;
+<img src="../pics/IFLoverview.png" height="360" width="480">&nbsp; &nbsp;
+</p>
+
+<p>
+<b>2. Our Contributions:</b><br/>
+<img src="../pics/IFLcontributions.png" height="360" width="480">
+</p>
+
+
+<p>
+<b>3. sopIFL attacks:</b><br/>
+<img src="../pics/sopIFL.png" height="360" width="480">
+
+<li>
+<b>Two SOP (same-origin policy) weaknesses in the iOS web engine</b> (see our report, to be annouced).
+</li>
+
+<li>
+<b>Evernote</b>'s sopIFL vulnerability: (acknowledged by <a href="https://evernote.com/security/report-issue/" target="_blank">Evernote security hall of fame</a>)
+</li>
+<img src="../pics/IFLevernote.png" height="521" width="1092">
+
+<li>
+<b>Mail.Ru</b>'s sopIFL vulnerability: (acknowledged by <a href="https://hackerone.com/mailru" target="_blank">Mail.Ru security bug bounty</a>)
+</li>
+<img src="../pics/IFLmailru.png" height="461.5" width="1200">
+
+<li>
+<b>QQ</b>'s sopIFL vulnerability: (<a href="http://www.wooyun.org/bugs/wooyun-2010-077219" target="_blank">the raw report in Chinese</a>)
+</li>
+<img src="../pics/IFLqq.png" height="491" width="765">
+</p>
+
+
+<p>
+<b>4. aimIFL attacks:</b><br/>
+
+<li>
+Apps vulnerable to the aimIFL attacks:
+</li>
+<img src="../pics/aimIFL.png" height="254.25" width="670.5">
+
+<li>
+An example of aimIFL-1 vulnerability (in the On The Road travel app):
+</li>
+<img src="../pics/IFL117go.png" height="537" width="753">
+
+<li>
+Baidu Browser's aimIFL-1 vulnerability (acknowledged as <a href="http://sec.baidu.com/index.php?announce/detail/26" target="_blank">the most valuable Baidu vuln. report of the second quarter of 2014</a>):
+</li>
+<img src="../pics/IFLbaidubrow.png" height="465" width="697">
+
+<li>
+Qihoo 360 Mobile Safe's aimIFL-1 vulnerability (acknowledged with <a href="http://security.360.cn/Index/news/id/35.html" target="_blank">the highest award in Qihoo 360's mobile bug bounty program history</a>):
+</li>
+<img src="../pics/IFL360safe.png" height="507" width="680.5">
+</p>
+
+<li>
+The aimIFL-2 attack on Android:
+</li>
+<img src="../pics/AndroidaimIFL2.png" height="432.5" width="745">
+
+<li>
+The aimIFL-2 attack on iOS:
+</li>
+<img src="../pics/iOSaimIFL2.png" height="448" width="548">
+</p>
+
+
+<p>
+<b>5. cmdIFL attacks:</b><br/>
+<li>
+We reported an cmdIFL issue in the popular open-source Terminal Emulator app (issue #374), see <a href="https://github.com/jackpal/Android-Terminal-Emulator/pull/375" target="_blank">here</a> and <a href="https://github.com/jackpal/Android-Terminal-Emulator/commit/51129616" target="_blank">here</a>.
+</li>
+</p>
+
+
+<p>
+<b>6. serverIFL attacks:</b><br/>
+<img src="../pics/serverIFL.png" height="296" width="1142">
+</p>
+
+
+</body>
+</html>
